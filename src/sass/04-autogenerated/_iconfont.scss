@@ -1,0 +1,80 @@
+// here we can import the generated base 64 css file, instead of the real fonts if need be.
+// we must append the name or else we have two files in the same dir with the same name
+
+
+// please comment out when not using base64
+//@import 'iconfont64';
+
+//normal non base64 font call
+@font-face {
+	font-family: "iconfont";
+	src: url('../fonts/iconfont.eot');
+	src: url('../fonts/iconfont.eot?#iefix') format('eot'),
+		url('../fonts/iconfont.woff') format('woff'),
+		url('../fonts/iconfont.ttf') format('truetype');
+}
+
+@mixin iconfont-styles {
+	font-family: "iconfont";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: none;
+}
+
+%iconfont {
+	@include iconfont-styles;
+}
+
+@function iconfont-char($filename) {
+	$char: "";
+
+	@if $filename == basket {
+		$char: "\E001";
+	}
+	@if $filename == check {
+		$char: "\E002";
+	}
+	@if $filename == ico-menu {
+		$char: "\E003";
+	}
+
+	@return $char;
+}
+
+
+@mixin iconfont($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %iconfont;
+		} @else {
+			@include iconfont-styles;
+		}
+		content: iconfont-char($filename);
+	}
+}
+
+// Classes for each font icon
+.iconfont-basket {
+	@include iconfont(basket);
+}.iconfont-check {
+	@include iconfont(check);
+}.iconfont-ico-menu {
+	@include iconfont(ico-menu);
+}
+
+// means you can also call it separatly like this:
+
+// .someclass {@include iconfont(basket, after, false);}
+// .someclass:after {
+//  content: "character";
+//  all styles included in stead of extended
+// }
+
+//Variable for each font icon
+$icon-basket: "\E001";
+$icon-check: "\E002";
+$icon-ico-menu: "\E003";

@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------------------
+//
+//                        BREAKPOINTS
+//
+/*-------------------------------------------------------------------------*/
+$breakpoints: (
+	xs: 400px,
+	s: 600px,
+  m: 767px,
+  l: 1001px,
+  xl: 1025px,
+  xxl: 1440px
+);
+
+@mixin breakpoint($name) {
+  @if not map-has-key($breakpoints, $name) {
+	@warn "Warning: `#{$name}` is not a valid breakpoint name.";
+  }
+  @else {
+	@media screen and (min-width: map-get($breakpoints, $name)) {
+	  @content;
+	 }
+  }
+}
+
+/*--------------------------------------------------------------------------
+//
+//                        CLEARFIX
+//
+/*-------------------------------------------------------------------------*/
+@mixin clearfix() {
+	*zoom:1;
+	&:before,
+	&:after {
+		content:"";
+		display:table;
+	}
+	&:after {
+	clear:both;
+	}
+}

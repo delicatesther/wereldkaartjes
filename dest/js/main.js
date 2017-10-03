@@ -1,0 +1,1 @@
+var xmlhttp=new XMLHttpRequest;xmlhttp.onreadystatechange=function(){if(4==this.readyState&&200==this.status){var t=JSON.parse(this.responseText);document.getElementById("demo").innerHTML=JSON.stringify(t.Inpakken)}},xmlhttp.open("GET","dest/js/wereldplaatjes.json",!0),xmlhttp.send();

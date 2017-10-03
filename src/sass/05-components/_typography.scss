@@ -1,0 +1,20 @@
+body {
+  font-family: $base-font--1;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 48px;
+  font-family: $base-font--2;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: $base-font--2;
+}
+
+.counter {
+  font-family: $base-font--3;
+}
