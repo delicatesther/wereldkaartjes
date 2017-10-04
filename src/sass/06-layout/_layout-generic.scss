@@ -10,3 +10,38 @@ body {
   display: flex;
   flex: 1;
 }
+section {
+  max-width: 850px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-between;
+  width: 100%;
+  li {
+    opacity: 0.5;
+    width: 200px;
+    height: 300px;
+    border: 1px solid $black;
+    border-radius: 5px;
+    margin: 5px;
+    display: block;
+    padding: 10px;
+    &.owned {
+      opacity: 1;
+    }
+    span {
+      display: block;
+      font-size: 10px;
+    }
+    .card-type {
+      font-size: 24px;
+      font-family: $base-font--2;
+    }
+  }
+}
