@@ -35,6 +35,162 @@ var china = [
   {"type": "Terracotta-leger", "owned": true},
   {"type": "Zijderlips", "owned": false},
 ];
+var zuidpool = [
+  {"type": "IJsschotsen", "owned": true},
+  {"type": "Zuidpoolstation", "owned": false},
+  {"type": "Antarctische vetmuur", "owned": true},
+  {"type": "Antarctische krill", "owned": false},
+  {"type": "Zee-engel", "owned": true},
+  {"type": "Giftige spons", "owned": false},
+  {"type": "Cryolophosaurus", "owned": false},
+  {"type": "Meteoriet", "owned": false},
+  {"type": "Bloedwaterval", "owned": true},
+  {"type": "Poolkip", "owned": false},
+];
+var madagaskar = [
+  {"type": "Baobab", "owned": false},
+  {"type": "Kleinste kameleon", "owned": false},
+  {"type": "Komeetstaartvlinder", "owned": false},
+  {"type": "Madagaskar-daggekkopoot", "owned": false},
+  {"type": "Olifantsvogel", "owned": false},
+  {"type": "Rode brandduizendpoot", "owned": false},
+  {"type": "Robijn", "owned": true},
+  {"type": "Tsingy de Bemaraha", "owned": true},
+  {"type": "Darwins wielwebspin", "owned": false},
+  {"type": "Reizigersboom", "owned": false},
+];
+var trein = [
+  {"type": "Basilius-kathedraal", "owned": false},
+  {"type": "Faberge-ei", "owned": false},
+  {"type": "Saiga", "owned": true},
+  {"type": "Joert", "owned": false},
+  {"type": "Vliegenzwam", "owned": true},
+  {"type": "Taiga", "owned": false},
+  {"type": "Baikalmeer", "owned": true},
+  {"type": "Denisovamens", "owned": false},
+  {"type": "Diamantmijn", "owned": false},
+  {"type": "Verboden stad", "owned": true},
+];
+var egypte = [
+  {"type": "Toetanchamon", "owned": false},
+  {"type": "Sfinx van Gizeh", "owned": false},
+  {"type": "Trilobiet", "owned": true},
+  {"type": "Oase", "owned": true},
+  {"type": "Wierook", "owned": true},
+  {"type": "Papyrus", "owned": false},
+  {"type": "Scarabee", "owned": false},
+  {"type": "Zandstorm", "owned": false},
+  {"type": "Vijfstreep schorpioen", "owned": false},
+  {"type": "Peridoot", "owned": true},
+];
+var galapagos = [
+  {"type": "Vleermuisvis", "owned": false},
+  {"type": "Blauwvoetgent", "owned": true},
+  {"type": "Reuzenvijgcactus", "owned": true},
+  {"type": "Galapagos-reuzenschildpad", "owned": false},
+  {"type": "Manzanilla-appel", "owned": true},
+  {"type": "Torenhoge lavarots", "owned": false},
+  {"type": "Darwinvinken", "owned": false},
+  {"type": "Zeeleguaan", "owned": false},
+  {"type": "Palo Santoboom schorpioen", "owned": false},
+  {"type": "Lavacactus", "owned": true},
+];
+var onderwaterwereld = [
+  {"type": "Kerstboomworm", "owned": false},
+  {"type": "Grootste onderwaterschat", "owned": true},
+  {"type": "Kwallenmeer", "owned": true},
+  {"type": "Cenote", "owned": false},
+  {"type": "Steenvis", "owned": false},
+  {"type": "Blauwe onderwatergrot", "owned": false},
+  {"type": "Zebrahaai", "owned": false},
+  {"type": "Blauwe draak", "owned": true},
+  {"type": "Groot Barriererif", "owned": false},
+  {"type": "Zeespin", "owned": true},
+];
+var peru = [
+  {"type": "Vinicunca", "owned": false},
+  {"type": "Rode rotshaan", "owned": false},
+  {"type": "Hoogland-indianen", "owned": true},
+  {"type": "Grootste Bromella", "owned": false},
+  {"type": "Pyriet", "owned": false},
+  {"type": "Cochenilleluis", "owned": false},
+  {"type": "Zoutbaden van Maras", "owned": false},
+  {"type": "Realgaar", "owned": true},
+  {"type": "Machu Picchu", "owned": true},
+  {"type": "Nazcalijnen", "owned": false},
+];
+var rockymountains = [
+  {"type": "Old Faithful-geiser", "owned": false},
+  {"type": "Bergketen", "owned": false},
+  {"type": "Grote prismabron", "owned": true},
+  {"type": "Mammoetboom", "owned": true},
+  {"type": "Bosbrand", "owned": true},
+  {"type": "Tijgersalamander", "owned": false},
+  {"type": "Ratelslang", "owned": false},
+  {"type": "Goudklomp", "owned": false},
+  {"type": "Rocky-mountain-sprinkhaan", "owned": true},
+  {"type": "Bizon", "owned": false},
+];
+var india = [
+  {"type": "Taj Mahal", "owned": false},
+  {"type": "Heilige Koe", "owned": true},
+  {"type": "Bindi", "owned": true},
+  {"type": "Bengaalse Tijger", "owned": true},
+  {"type": "Bollywood", "owned": false},
+  {"type": "Koningscobra", "owned": false},
+  {"type": "Talenknobbel", "owned": false},
+  {"type": "Ganges", "owned": false},
+  {"type": "Blauwe Stad", "owned": false},
+  {"type": "Holi", "owned": true},
+];
+var varen = [
+  {"type": "Windpark Gemini", "owned": true},
+  {"type": "Astronavigatie", "owned": false},
+  {"type": "Bultrug", "owned": true},
+  {"type": "Vissen met Aalscholvers", "owned": true},
+  {"type": "Portugees oorlogsschip", "owned": false},
+  {"type": "Herculestoren", "owned": true},
+  {"type": "Eb en vloed", "owned": true},
+  {"type": "Reuzenalbatros", "owned": true},
+  {"type": "Boomstamkano", "owned": true},
+  {"type": "Amazone", "owned": false},
+];
+var nederland = [
+  {"type": "Deltawerken", "owned": true},
+  {"type": "Oester", "owned": false},
+  {"type": "Zeedruif", "owned": true},
+  {"type": "Bloemenexport", "owned": false},
+  {"type": "Venijnboom", "owned": true},
+  {"type": "Riemvis", "owned": true},
+  {"type": "Landwinning", "owned": true},
+  {"type": "Bastaardschorpioen", "owned": true},
+  {"type": "Mammoet", "owned": false},
+  {"type": "Hunebed", "owned": true},
+];
+var survival = [
+  {"type": "Kamp opzetten", "owned": true},
+  {"type": "Drinkwater", "owned": true},
+  {"type": "Rantsoen", "owned": false},
+  {"type": "Insecten eten", "owned": true},
+  {"type": "Zon-bescherming", "owned": false},
+  {"type": "Lokake bevolking", "owned": false},
+  {"type": "Camouflage", "owned": false},
+  {"type": "Giftige soorten herkennen", "owned": true},
+  {"type": "Bloedzuiger", "owned": true},
+  {"type": "Vlot", "owned": false},
+];
+var wereldkaart = [
+  {"type": "Duivelsblad", "owned": true},
+  {"type": "Doodskwal", "owned": true},
+  {"type": "Victoria-watervallen", "owned": true},
+  {"type": "Himalaya", "owned": true},
+  {"type": "Gestippelde boomkikker", "owned": false},
+  {"type": "Mauna Loa", "owned": true},
+  {"type": "Grot van de kristallen", "owned": false},
+  {"type": "Kleine slak", "owned": false},
+  {"type": "Roze diamant", "owned": true},
+  {"type": "Wave rock", "owned": false},
+];
 
 
 $(document).ready(function(){
@@ -62,32 +218,19 @@ $(document).ready(function(){
   fillList(inpakken, $('.inpakken-cards'));
   fillList(vliegen, $('.vliegen-cards'));
   fillList(china, $('.china-cards'));
+  fillList(zuidpool, $('.zuidpool-cards'));
+  fillList(madagaskar, $('.madagaskar-cards'));
+  fillList(trein, $('.trein-cards'));
+  fillList(egypte, $('.egypte-cards'));
+  fillList(galapagos, $('.galapagos-cards'));
+  fillList(peru, $('.peru-cards'));
+  fillList(rockymountains, $('.rockymountains-cards'));
+  fillList(india, $('.india-cards'));
+  fillList(varen, $('.varen-cards'));
+  fillList(nederland, $('.nederland-cards'));
+  fillList(survival, $('.survival-cards'));
+  fillList(wereldkaart, $('.wereldkaart-cards'));
+
+  $('#counter').html(pad($('.owned').length, 6));
 
 });
-
-// $(document).ready(function(){
-//
-//   printValues = function(obj) {
-//     for (var key in obj) {
-//       if (typeof obj[key] === "object") {
-//         printValues(obj[key]);
-//       } else {
-//         if (key == "owned") {
-//           continue;
-//         } else {
-//           // $('.category').append('<span>' + obj[key]+ '</span>');
-//           // $('.inpakken').append('<span>' + wereldplaatjes.Inpakken + '</span>');
-//
-//         }
-//       }
-//     }
-//   }
-//
-//   $.each( wereldplaatjes, function( key, value ) {
-//     $('.categories').append('<li class="category ' + key.toLowerCase() + '">' + key + '</li>');
-//   });
-//
-//
-//   $('.inpakken').append(printValues(wereldplaatjes.Inpakken));
-//
-// });

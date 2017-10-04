@@ -9,6 +9,10 @@ body {
 .main {
   display: flex;
   flex: 1;
+  padding: 20px;
+}
+footer {
+  padding: 20px;
 }
 section {
   max-width: 850px;
@@ -32,8 +36,17 @@ section {
     margin: 5px;
     display: block;
     padding: 10px;
+    position: relative;
     &.owned {
       opacity: 1;
+      &:after {
+        content: 'Heb ik!';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-30deg);
+      }
     }
     span {
       display: block;

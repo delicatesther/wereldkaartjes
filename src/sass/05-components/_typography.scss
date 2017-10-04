@@ -4,9 +4,13 @@ body {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 24px;
   font-family: $base-font--2;
   margin-bottom: 15px;
+  @include breakpoint(m) {
+    font-size: 48px;
+
+  }
 }
 
 h2 {

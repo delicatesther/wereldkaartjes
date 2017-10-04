@@ -217,12 +217,12 @@ body {
 /* line 6, src/sass/05-components/_typography.scss */
 
 h1 {
-	font-size: 48px;
+	font-size: 24px;
 	font-family: "Pangolin", cursive;
 	margin-bottom: 15px;
 }
 
-/* line 12, src/sass/05-components/_typography.scss */
+/* line 16, src/sass/05-components/_typography.scss */
 
 h2 {
 	font-size: 24px;
@@ -230,7 +230,7 @@ h2 {
 	font-family: "Pangolin", cursive;
 }
 
-/* line 18, src/sass/05-components/_typography.scss */
+/* line 22, src/sass/05-components/_typography.scss */
 
 .counter {
 	font-family: "Zilla Slab Highlight", sans-serif;
@@ -240,14 +240,14 @@ h2 {
 
 .counter {
 	height: 65px;
-	width: 150px;
+	width: 166px;
 	background: #000000;
 	border: 3px solid #ffffff;
 	color: #ffffff;
 	-webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
 	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
 	font-size: 40px;
-	letter-spacing: 2px;
+	letter-spacing: 3px;
 	text-align: center;
 	padding-top: 9px;
 }
@@ -281,9 +281,16 @@ body {
 	-webkit-box-flex: 1;
 	-ms-flex: 1;
 	flex: 1;
+	padding: 20px;
 }
 
-/* line 13, src/sass/06-layout/_layout-generic.scss */
+/* line 14, src/sass/06-layout/_layout-generic.scss */
+
+footer {
+	padding: 20px;
+}
+
+/* line 17, src/sass/06-layout/_layout-generic.scss */
 
 section {
 	max-width: 850px;
@@ -292,7 +299,7 @@ section {
 	margin-bottom: 20px;
 }
 
-/* line 19, src/sass/06-layout/_layout-generic.scss */
+/* line 23, src/sass/06-layout/_layout-generic.scss */
 
 .cards {
 	display: -webkit-box;
@@ -312,7 +319,7 @@ section {
 	width: 100%;
 }
 
-/* line 26, src/sass/06-layout/_layout-generic.scss */
+/* line 30, src/sass/06-layout/_layout-generic.scss */
 
 .cards li {
 	opacity: 0.5;
@@ -323,22 +330,35 @@ section {
 	margin: 5px;
 	display: block;
 	padding: 10px;
+	position: relative;
 }
 
-/* line 35, src/sass/06-layout/_layout-generic.scss */
+/* line 40, src/sass/06-layout/_layout-generic.scss */
 
 .cards li.owned {
 	opacity: 1;
 }
 
-/* line 38, src/sass/06-layout/_layout-generic.scss */
+/* line 42, src/sass/06-layout/_layout-generic.scss */
+
+.cards li.owned:after {
+	content: 'Heb ik!';
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%) rotate(-30deg);
+	transform: translate(-50%, -50%) rotate(-30deg);
+}
+
+/* line 51, src/sass/06-layout/_layout-generic.scss */
 
 .cards li span {
 	display: block;
 	font-size: 10px;
 }
 
-/* line 42, src/sass/06-layout/_layout-generic.scss */
+/* line 55, src/sass/06-layout/_layout-generic.scss */
 
 .cards li .card-type {
 	font-size: 24px;
@@ -352,4 +372,14 @@ header {
 }
 
 /*# sourceMappingURL=../../../../../../src/sass */
+
+@media screen and (min-width: 767px) {
+
+/* line 6, src/sass/05-components/_typography.scss */
+
+h1 {
+	font-size: 48px;
+}
+
+}
 
