@@ -3,12 +3,12 @@
     "01" : {
       "number" : "001",
       "type"   : "Camera",
-      "owned"  : false
+      "owned"  : true
     },
     "02" : {
       "number" : "002",
       "type"   : "Schoenen",
-      "owned"  : false
+      "owned"  : true
     },
     "03" : {
       "number" : "003",
@@ -23,12 +23,12 @@
     "05" : {
       "number" : "005",
       "type"   : "Hoofdlamp",
-      "owned"  : false
+      "owned"  : true
     },
     "06" : {
       "number" : "006",
       "type"   : "EHBO-setje",
-      "owned"  : false
+      "owned"  : true
     },
     "07" : {
       "number" : "007",
@@ -43,7 +43,7 @@
     "09" : {
       "number" : "009",
       "type"   : "Satteliet-telefoon",
-      "owned"  : false
+      "owned"  : true
     },
     "10" : {
       "number" : "010",
@@ -60,7 +60,7 @@
     "02" : {
       "number" : "012",
       "type"   : "Rijstvelden",
-      "owned"  : false
+      "owned"  : true
     },
     "03" : {
       "number" : "013",
@@ -75,22 +75,22 @@
     "05" : {
       "number" : "015",
       "type"   : "Het Hilliermeer",
-      "owned"  : false
+      "owned"  : true
     },
     "06" : {
       "number" : "016",
       "type"   : "Het Hartrif",
-      "owned"  : false
+      "owned"  : true
     },
     "07" : {
       "number" : "017",
       "type"   : "Rivierdelta's",
-      "owned"  : false
+      "owned"  : true
     },
     "08" : {
       "number" : "018",
       "type"   : "Cirkelirrigatie",
-      "owned"  : false
+      "owned"  : true
     },
     "09" : {
       "number" : "019",
@@ -107,7 +107,7 @@
     "01" : {
       "number" : "021",
       "type"   : "Chinese Muur",
-      "owned"  : false
+      "owned"  : true
     },
     "02" : {
       "number" : "022",
@@ -137,17 +137,17 @@
     "07" : {
       "number" : "027",
       "type"   : "Nationaal park Zhangjiajie's",
-      "owned"  : false
+      "owned"  : true
     },
     "08" : {
       "number" : "028",
       "type"   : "Temmincks Saterhoen",
-      "owned"  : false
+      "owned"  : true
     },
     "09" : {
       "number" : "029",
       "type"   : "Terracotta-leger",
-      "owned"  : false
+      "owned"  : true
     },
     "10" : {
       "number" : "030",
@@ -159,7 +159,7 @@
     "01" : {
       "number" : "031",
       "type"   : "IJsschotsen",
-      "owned"  : false
+      "owned"  : true
     },
     "02" : {
       "number" : "032",
@@ -179,7 +179,7 @@
     "05" : {
       "number" : "035",
       "type"   : "Zee-engel",
-      "owned"  : false
+      "owned"  : true
     },
     "06" : {
       "number" : "036",
@@ -199,7 +199,7 @@
     "09" : {
       "number" : "039",
       "type"   : "Bloedwaterval",
-      "owned"  : false
+      "owned"  : true
     },
     "10" : {
       "number" : "040",
@@ -208,58 +208,6 @@
     }
   },
   "Madagaskar" : {
-    "01" : {
-      "number" : "021",
-      "type"   : "Chinese Muur",
-      "owned"  : false
-    },
-    "02" : {
-      "number" : "022",
-      "type"   : "Rode Strand",
-      "owned"  : false
-    },
-    "03" : {
-      "number" : "023",
-      "type"   : "Pareltoren van het Oosten",
-      "owned"  : true
-    },
-    "04" : {
-      "number" : "024",
-      "type"   : "Cinnaber",
-      "owned"  : false
-    },
-    "05" : {
-      "number" : "025",
-      "type"   : "Regenboogbergen",
-      "owned"  : false
-    },
-    "06" : {
-      "number" : "026",
-      "type"   : "Gouden Stompneusaap",
-      "owned"  : false
-    },
-    "07" : {
-      "number" : "027",
-      "type"   : "Nationaal park Zhangjiajie's",
-      "owned"  : false
-    },
-    "08" : {
-      "number" : "028",
-      "type"   : "Temmincks Saterhoen",
-      "owned"  : false
-    },
-    "09" : {
-      "number" : "029",
-      "type"   : "Terracotta-leger",
-      "owned"  : false
-    },
-    "10" : {
-      "number" : "030",
-      "type"   : "Zijderlips",
-      "owned"  : false
-    }
-  },
-  "Zuidpool" : {
     "01" : {
       "number" : "041",
       "type"   : "Baobab",
@@ -298,7 +246,7 @@
     "08" : {
       "number" : "048",
       "type"   : "Tsingy de Bemaraha",
-      "owned"  : false
+      "owned"  : true
     },
     "09" : {
       "number" : "049",
@@ -325,7 +273,7 @@
     "03" : {
       "number" : "053",
       "type"   : "Saiga",
-      "owned"  : false
+      "owned"  : true
     },
     "04" : {
       "number" : "054",
@@ -335,7 +283,7 @@
     "05" : {
       "number" : "055",
       "type"   : "Vliegenzwam",
-      "owned"  : false
+      "owned"  : true
     },
     "06" : {
       "number" : "056",
@@ -345,7 +293,7 @@
     "07" : {
       "number" : "057",
       "type"   : "Baikalmeer",
-      "owned"  : false
+      "owned"  : true
     },
     "08" : {
       "number" : "058",
@@ -354,13 +302,13 @@
     },
     "09" : {
       "number" : "059",
-      "type"   : "Diamandmijn",
+      "type"   : "Diamantmijn",
       "owned"  : false
     },
     "10" : {
       "number" : "060",
       "type"   : "Verboden stad",
-      "owned"  : false
+      "owned"  : true
     }
   },
   "Egypte" : {
@@ -377,17 +325,17 @@
     "03" : {
       "number" : "063",
       "type"   : "Trilobiet",
-      "owned"  : false
+      "owned"  : true
     },
     "04" : {
       "number" : "064",
       "type"   : "Oase",
-      "owned"  : false
+      "owned"  : true
     },
     "05" : {
       "number" : "065",
       "type"   : "Wierook",
-      "owned"  : false
+      "owned"  : true
     },
     "06" : {
       "number" : "066",
@@ -412,7 +360,7 @@
     "10" : {
       "number" : "070",
       "type"   : "Peridoot",
-      "owned"  : false
+      "owned"  : true
     }
   },
   "Galapagos-eilanden" : {
@@ -424,12 +372,12 @@
     "02" : {
       "number" : "072",
       "type"   : "Blauwvoetgent",
-      "owned"  : false
+      "owned"  : true
     },
     "03" : {
       "number" : "073",
       "type"   : "Reuzenvijgcactus",
-      "owned"  : false
+      "owned"  : true
     },
     "04" : {
       "number" : "074",
@@ -439,7 +387,7 @@
     "05" : {
       "number" : "075",
       "type"   : "Manzanilla-appel",
-      "owned"  : false
+      "owned"  : true
     },
     "06" : {
       "number" : "076",
@@ -464,7 +412,7 @@
     "10" : {
       "number" : "080",
       "type"   : "Lavacactus",
-      "owned"  : false
+      "owned"  : true
     }
   },
   "Onderwaterwereld" : {
@@ -476,12 +424,12 @@
     "02" : {
       "number" : "082",
       "type"   : "Grootste onderwaterschat",
-      "owned"  : false
+      "owned"  : true
     },
     "03" : {
       "number" : "083",
       "type"   : "Kwallenmeer",
-      "owned"  : false
+      "owned"  : true
     },
     "04" : {
       "number" : "084",
@@ -501,12 +449,12 @@
     "07" : {
       "number" : "087",
       "type"   : "Zebrahaai",
-      "owned"  : false
+      "owned"  : true
     },
     "08" : {
       "number" : "088",
       "type"   : "Blauwe draak",
-      "owned"  : false
+      "owned"  : true
     },
     "09" : {
       "number" : "089",
@@ -558,12 +506,12 @@
     "08" : {
       "number" : "098",
       "type"   : "Realgaar",
-      "owned"  : false
+      "owned"  : true
     },
     "09" : {
       "number" : "099",
       "type"   : "Machu Picchu",
-      "owned"  : false
+      "owned"  : true
     },
     "10" : {
       "number" : "100",
@@ -585,17 +533,17 @@
     "03" : {
       "number" : "103",
       "type"   : "Grote prismabron",
-      "owned"  : false
+      "owned"  : true
     },
     "04" : {
       "number" : "104",
       "type"   : "Mammoetboom",
-      "owned"  : false
+      "owned"  : true
     },
     "05" : {
       "number" : "105",
       "type"   : "Bosbrand",
-      "owned"  : false
+      "owned"  : true
     },
     "06" : {
       "number" : "106",
@@ -605,7 +553,7 @@
     "07" : {
       "number" : "107",
       "type"   : "Ratelslang",
-      "owned"  : false
+      "owned"  : true
     },
     "08" : {
       "number" : "108",
@@ -615,7 +563,7 @@
     "09" : {
       "number" : "109",
       "type"   : "Rocky-mountain-sprinkhaan",
-      "owned"  : false
+      "owned"  : true
     },
     "10" : {
       "number" : "110",
@@ -632,17 +580,17 @@
     "02" : {
       "number" : "112",
       "type"   : "Heilige koe",
-      "owned"  : false
+      "owned"  : true
     },
     "03" : {
       "number" : "113",
       "type"   : "Bindi",
-      "owned"  : false
+      "owned"  : true
     },
     "04" : {
       "number" : "114",
       "type"   : "Bengaalse tijger",
-      "owned"  : false
+      "owned"  : true
     },
     "05" : {
       "number" : "115",
@@ -672,14 +620,14 @@
     "10" : {
       "number" : "120",
       "type"   : "Holi",
-      "owned"  : false
+      "owned"  : true
     }
   },
   "Varen" : {
     "01" : {
       "number" : "121",
       "type"   : "Windpark Gemini",
-      "owned"  : false
+      "owned"  : true
     },
     "02" : {
       "number" : "122",
@@ -689,12 +637,12 @@
     "03" : {
       "number" : "123",
       "type"   : "Bultrug",
-      "owned"  : false
+      "owned"  : true
     },
     "04" : {
       "number" : "124",
       "type"   : "Vissen met aalscholvers",
-      "owned"  : false
+      "owned"  : true
     },
     "05" : {
       "number" : "125",
@@ -704,22 +652,22 @@
     "06" : {
       "number" : "126",
       "type"   : "Herculestoren",
-      "owned"  : false
+      "owned"  : true
     },
     "07" : {
       "number" : "127",
       "type"   : "Eb en vloed",
-      "owned"  : false
+      "owned"  : true
     },
     "08" : {
       "number" : "128",
       "type"   : "Reuzenalbatros",
-      "owned"  : false
+      "owned"  : true
     },
     "09" : {
       "number" : "129",
       "type"   : "Boomstamkano",
-      "owned"  : false
+      "owned"  : true
     },
     "10" : {
       "number" : "130",
@@ -731,7 +679,7 @@
     "01" : {
       "number" : "131",
       "type"   : "Deltawerken",
-      "owned"  : false
+      "owned"  : true
     },
     "02" : {
       "number" : "132",
@@ -741,7 +689,7 @@
     "03" : {
       "number" : "133",
       "type"   : "Zeedruif",
-      "owned"  : false
+      "owned"  : true
     },
     "04" : {
       "number" : "134",
@@ -751,22 +699,22 @@
     "05" : {
       "number" : "135",
       "type"   : "Venijnboom",
-      "owned"  : false
+      "owned"  : true
     },
     "06" : {
       "number" : "136",
       "type"   : "Riemvis",
-      "owned"  : false
+      "owned"  : true
     },
     "07" : {
       "number" : "137",
       "type"   : "Landwinning",
-      "owned"  : false
+      "owned"  : true
     },
     "08" : {
       "number" : "138",
       "type"   : "Bastaardschorpioen",
-      "owned"  : false
+      "owned"  : true
     },
     "09" : {
       "number" : "139",
@@ -783,12 +731,12 @@
     "01" : {
       "number" : "141",
       "type"   : "Kamp opzetten",
-      "owned"  : false
+      "owned"  : true
     },
     "02" : {
       "number" : "142",
       "type"   : "Drinkwater",
-      "owned"  : false
+      "owned"  : true
     },
     "03" : {
       "number" : "143",
@@ -798,7 +746,7 @@
     "04" : {
       "number" : "144",
       "type"   : "Insecten eten",
-      "owned"  : false
+      "owned"  : true
     },
     "05" : {
       "number" : "145",
@@ -818,12 +766,12 @@
     "08" : {
       "number" : "148",
       "type"   : "Giftige soorten herkennen",
-      "owned"  : false
+      "owned"  : true
     },
     "09" : {
       "number" : "149",
       "type"   : "Bloedzuiger",
-      "owned"  : false
+      "owned"  : true
     },
     "10" : {
       "number" : "150",
@@ -835,22 +783,22 @@
     "01" : {
       "number" : "151",
       "type"   : "Duivelsblad",
-      "owned"  : false
+      "owned"  : true
     },
     "02" : {
       "number" : "152",
       "type"   : "Dooskwal",
-      "owned"  : false
+      "owned"  : true
     },
     "03" : {
       "number" : "153",
       "type"   : "Victoria-watervallen",
-      "owned"  : false
+      "owned"  : true
     },
     "04" : {
       "number" : "154",
       "type"   : "Himalaya",
-      "owned"  : false
+      "owned"  : true
     },
     "05" : {
       "number" : "155",
@@ -860,7 +808,7 @@
     "06" : {
       "number" : "156",
       "type"   : "Mauna Loa",
-      "owned"  : false
+      "owned"  : true
     },
     "07" : {
       "number" : "157",
@@ -875,7 +823,7 @@
     "09" : {
       "number" : "159",
       "type"   : "Roze diamant",
-      "owned"  : false
+      "owned"  : true
     },
     "10" : {
       "number" : "160",

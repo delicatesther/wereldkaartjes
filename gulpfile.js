@@ -155,10 +155,10 @@ gulp.task('spriteSvg', function () {
 
 
 gulp.task('js', function(callback) {
-  return gulp.src(paths.js.src + 'main.js')
-  .pipe(uglify().on('error', function(e) {
-    console.log(e);
-  }))
+  return gulp.src(paths.js.src + '**/*')
+  // .pipe(uglify().on('error', function(e) {
+  //   console.log(e);
+  // }))
   .pipe(gulp.dest(paths.js.dest));
 });
 

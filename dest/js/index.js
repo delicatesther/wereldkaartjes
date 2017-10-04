@@ -1,1 +1,5 @@
-var name="wereldplaatjes",gulp=!0;
+var name = "wereldplaatjes";
+
+
+var gulp = true;
+
