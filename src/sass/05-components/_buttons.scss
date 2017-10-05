@@ -1,0 +1,10 @@
+.to-top {
+  font-family: $base-font--2;
+  position: absolute;
+  right: 5%;
+  top: 0;
+  cursor: pointer;
+  span {
+    font-family: $base-font--1;
+  }
+}

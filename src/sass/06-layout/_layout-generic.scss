@@ -5,6 +5,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: $yellow;
+  color: $white;
 }
 .main {
   display: flex;
@@ -18,43 +20,6 @@ section {
   max-width: 850px;
   margin: 0 auto;
   display: block;
-  margin-bottom: 20px;
-}
-.cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: space-between;
-  width: 100%;
-  li {
-    opacity: 0.5;
-    width: 200px;
-    height: 300px;
-    border: 1px solid $black;
-    border-radius: 5px;
-    margin: 5px;
-    display: block;
-    padding: 10px;
-    position: relative;
-    &.owned {
-      opacity: 1;
-      &:after {
-        content: 'Heb ik!';
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) rotate(-30deg);
-      }
-    }
-    span {
-      display: block;
-      font-size: 10px;
-    }
-    .card-type {
-      font-size: 24px;
-      font-family: $base-font--2;
-    }
-  }
+  margin-bottom: 50px;
+  position: relative;
 }

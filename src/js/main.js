@@ -11,7 +11,7 @@ var inpakken = [
   {"type": "Speurplaatje", "owned": false},
 ];
 var vliegen = [
-  {"type": "Het Natronmeer", "owned": false},
+  {"type": "Het Natronmeer", "owned": true},
   {"type": "Rijstvelden", "owned": true},
   {"type": "Malé", "owned": true},
   {"type": "Palau", "owned": false},
@@ -37,7 +37,7 @@ var china = [
 ];
 var zuidpool = [
   {"type": "IJsschotsen", "owned": true},
-  {"type": "Zuidpoolstation", "owned": false},
+  {"type": "Zuidpoolstation", "owned": true},
   {"type": "Antarctische vetmuur", "owned": true},
   {"type": "Antarctische krill", "owned": false},
   {"type": "Zee-engel", "owned": true},
@@ -68,18 +68,18 @@ var trein = [
   {"type": "Taiga", "owned": false},
   {"type": "Baikalmeer", "owned": true},
   {"type": "Denisovamens", "owned": false},
-  {"type": "Diamantmijn", "owned": false},
+  {"type": "Diamantmijn", "owned": true},
   {"type": "Verboden stad", "owned": true},
 ];
 var egypte = [
-  {"type": "Toetanchamon", "owned": false},
+  {"type": "Toetanchamon", "owned": true},
   {"type": "Sfinx van Gizeh", "owned": false},
   {"type": "Trilobiet", "owned": true},
   {"type": "Oase", "owned": true},
   {"type": "Wierook", "owned": true},
   {"type": "Papyrus", "owned": false},
   {"type": "Scarabee", "owned": false},
-  {"type": "Zandstorm", "owned": false},
+  {"type": "Zandstorm", "owned": true},
   {"type": "Vijfstreep schorpioen", "owned": false},
   {"type": "Peridoot", "owned": true},
 ];
@@ -111,10 +111,10 @@ var peru = [
   {"type": "Vinicunca", "owned": false},
   {"type": "Rode rotshaan", "owned": false},
   {"type": "Hoogland-indianen", "owned": true},
-  {"type": "Grootste Bromella", "owned": false},
+  {"type": "Grootste Bromella", "owned": true},
   {"type": "Pyriet", "owned": false},
   {"type": "Cochenilleluis", "owned": false},
-  {"type": "Zoutbaden van Maras", "owned": false},
+  {"type": "Zoutbaden van Maras", "owned": true},
   {"type": "Realgaar", "owned": true},
   {"type": "Machu Picchu", "owned": true},
   {"type": "Nazcalijnen", "owned": false},
@@ -127,7 +127,7 @@ var rockymountains = [
   {"type": "Bosbrand", "owned": true},
   {"type": "Tijgersalamander", "owned": false},
   {"type": "Ratelslang", "owned": false},
-  {"type": "Goudklomp", "owned": false},
+  {"type": "Goudklomp", "owned": true},
   {"type": "Rocky-mountain-sprinkhaan", "owned": true},
   {"type": "Bizon", "owned": false},
 ];
@@ -157,7 +157,7 @@ var varen = [
 ];
 var nederland = [
   {"type": "Deltawerken", "owned": true},
-  {"type": "Oester", "owned": false},
+  {"type": "Oester", "owned": true},
   {"type": "Zeedruif", "owned": true},
   {"type": "Bloemenexport", "owned": false},
   {"type": "Venijnboom", "owned": true},
@@ -172,8 +172,8 @@ var survival = [
   {"type": "Drinkwater", "owned": true},
   {"type": "Rantsoen", "owned": false},
   {"type": "Insecten eten", "owned": true},
-  {"type": "Zon-bescherming", "owned": false},
-  {"type": "Lokake bevolking", "owned": false},
+  {"type": "Zon-bescherming", "owned": true},
+  {"type": "Lokake bevolking", "owned": true},
   {"type": "Camouflage", "owned": false},
   {"type": "Giftige soorten herkennen", "owned": true},
   {"type": "Bloedzuiger", "owned": true},
@@ -208,9 +208,9 @@ $(document).ready(function(){
 
 
       if(arr[i].owned == true) {
-        el.append('<li class="owned"><span>' + pad(cardNumber, 3) +'</span><span class="card-type">' + cardType + '</span</li>');
+        el.append('<li class="owned"><span class="card-type">' + cardType + '</span</li>');
       } else {
-        el.append('<li><span>' + pad(cardNumber, 3) +'</span><span class="card-type">' + cardType + '</span</li>');
+        el.append('<li><span class="card-type">' + cardType + '</span</li>');
       }
     }
   }
@@ -223,6 +223,7 @@ $(document).ready(function(){
   fillList(trein, $('.trein-cards'));
   fillList(egypte, $('.egypte-cards'));
   fillList(galapagos, $('.galapagos-cards'));
+  fillList(onderwaterwereld, $('.onderwaterwereld-cards'));
   fillList(peru, $('.peru-cards'));
   fillList(rockymountains, $('.rockymountains-cards'));
   fillList(india, $('.india-cards'));
@@ -232,5 +233,17 @@ $(document).ready(function(){
   fillList(wereldkaart, $('.wereldkaart-cards'));
 
   $('#counter').html(pad($('.owned').length, 6));
+
+  addNumbers = function() {
+    var i = 1;
+    while(i <= 160) {
+      $('li').each(function() {
+        $(this).append('<span>' + i + '</span>');
+      })
+    }i++
+  };
+
+  addNumbers();
+
 
 });

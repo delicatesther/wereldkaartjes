@@ -228,12 +228,29 @@ h2 {
 	font-size: 24px;
 	text-transform: uppercase;
 	font-family: "Pangolin", cursive;
+	margin-bottom: 5px;
 }
 
-/* line 22, src/sass/05-components/_typography.scss */
+/* line 23, src/sass/05-components/_typography.scss */
 
 .counter {
 	font-family: "Zilla Slab Highlight", sans-serif;
+}
+
+/* line 1, src/sass/05-components/_buttons.scss */
+
+.to-top {
+	font-family: "Pangolin", cursive;
+	position: absolute;
+	right: 5%;
+	top: 0;
+	cursor: pointer;
+}
+
+/* line 7, src/sass/05-components/_buttons.scss */
+
+.to-top span {
+	font-family: "Open Sans", sans-serif;
 }
 
 /* line 1, src/sass/05-components/_inputs.scss */
@@ -250,6 +267,7 @@ h2 {
 	letter-spacing: 3px;
 	text-align: center;
 	padding-top: 9px;
+	margin: 10px;
 }
 
 /* line 1, src/sass/06-layout/_layout-generic.scss */
@@ -270,9 +288,11 @@ body {
 	-ms-flex-direction: column;
 	flex-direction: column;
 	min-height: 100vh;
+	background: #f9b40f;
+	color: #ffffff;
 }
 
-/* line 9, src/sass/06-layout/_layout-generic.scss */
+/* line 11, src/sass/06-layout/_layout-generic.scss */
 
 .main {
 	display: -webkit-box;
@@ -284,22 +304,98 @@ body {
 	padding: 20px;
 }
 
-/* line 14, src/sass/06-layout/_layout-generic.scss */
+/* line 16, src/sass/06-layout/_layout-generic.scss */
 
 footer {
 	padding: 20px;
 }
 
-/* line 17, src/sass/06-layout/_layout-generic.scss */
+/* line 19, src/sass/06-layout/_layout-generic.scss */
 
 section {
 	max-width: 850px;
 	margin: 0 auto;
 	display: block;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
+	position: relative;
 }
 
-/* line 23, src/sass/06-layout/_layout-generic.scss */
+/* line 1, src/sass/06-layout/_header.scss */
+
+header {
+	padding: 20px;
+	text-align: center;
+}
+
+/* line 4, src/sass/06-layout/_header.scss */
+
+header h1 {
+	display: block;
+	margin: 0 auto 40px;
+}
+
+/* line 8, src/sass/06-layout/_header.scss */
+
+header .counter {
+	margin: 10px auto 30px;
+}
+
+/* line 13, src/sass/06-layout/_header.scss */
+
+nav ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	max-width: 850px;
+	margin: 0 auto;
+}
+
+/* line 21, src/sass/06-layout/_header.scss */
+
+nav li {
+	margin: 5px;
+	background: rgba(255, 255, 255, 0.2);
+	padding: 2px 5px;
+}
+
+/* line 25, src/sass/06-layout/_header.scss */
+
+nav li:hover {
+	background: rgba(255, 255, 255, 0.4);
+}
+
+/* line 28, src/sass/06-layout/_header.scss */
+
+nav li a {
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/* line 2, src/sass/06-layout/_footer.scss */
+
+footer p {
+	margin-bottom: 5px;
+}
+
+/* line 5, src/sass/06-layout/_footer.scss */
+
+footer a {
+	color: #ffffff;
+}
+
+/* line 1, src/sass/06-layout/_cards.scss */
 
 .cards {
 	display: -webkit-box;
@@ -319,30 +415,59 @@ section {
 	width: 100%;
 }
 
-/* line 30, src/sass/06-layout/_layout-generic.scss */
+/* line 8, src/sass/06-layout/_cards.scss */
 
 .cards li {
 	opacity: 0.5;
-	width: 200px;
-	height: 300px;
-	border: 1px solid #000000;
+	border: 1px solid #ffffff;
 	border-radius: 5px;
 	margin: 5px;
 	display: block;
 	padding: 10px;
 	position: relative;
+	width: 120px;
+	height: 180px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
-/* line 40, src/sass/06-layout/_layout-generic.scss */
+/* line 25, src/sass/06-layout/_cards.scss */
+
+.cards li:before {
+	content: '';
+	width: 100%;
+	height: 55%;
+	top: 28%;
+	left: 0;
+	display: block;
+	position: absolute;
+	background: #ffffff;
+}
+
+/* line 35, src/sass/06-layout/_cards.scss */
 
 .cards li.owned {
 	opacity: 1;
+	border: none;
+	-webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
-/* line 42, src/sass/06-layout/_layout-generic.scss */
+/* line 39, src/sass/06-layout/_cards.scss */
+
+.cards li.owned:hover {
+	-webkit-animation: wiggle 1s;
+	animation: wiggle 1s;
+}
+
+/* line 42, src/sass/06-layout/_cards.scss */
 
 .cards li.owned:after {
 	content: 'Heb ik!';
+	color: #000000;
+	font-size: 24px;
+	font-family: "Pangolin", cursive;
 	display: block;
 	position: absolute;
 	top: 50%;
@@ -351,27 +476,111 @@ section {
 	transform: translate(-50%, -50%) rotate(-30deg);
 }
 
-/* line 51, src/sass/06-layout/_layout-generic.scss */
+/* line 56, src/sass/06-layout/_cards.scss */
 
-.cards li span {
-	display: block;
-	font-size: 10px;
-}
-
-/* line 55, src/sass/06-layout/_layout-generic.scss */
-
-.cards li .card-type {
-	font-size: 24px;
+.card-type {
 	font-family: "Pangolin", cursive;
+	font-size: 15px;
 }
 
-/* line 1, src/sass/06-layout/_header.scss */
+/* line 65, src/sass/06-layout/_cards.scss */
 
-header {
-	padding: 20px;
+.inpakken .cards .owned {
+	background-color: #9c1a60;
 }
 
-/*# sourceMappingURL=../../../../../../src/sass */
+/* line 72, src/sass/06-layout/_cards.scss */
+
+.vliegen .cards .owned {
+	background-color: #ff367a;
+}
+
+/* line 80, src/sass/06-layout/_cards.scss */
+
+.china .cards .owned {
+	background-color: #cc0000;
+}
+
+/* line 87, src/sass/06-layout/_cards.scss */
+
+.zuidpool .cards .owned {
+	background: #ffffff;
+	color: #599387;
+}
+
+/* line 95, src/sass/06-layout/_cards.scss */
+
+.madagaskar .cards .owned {
+	background-color: #37a9a1;
+}
+
+/* line 102, src/sass/06-layout/_cards.scss */
+
+.trein .cards .owned {
+	background-color: #b9d239;
+}
+
+/* line 109, src/sass/06-layout/_cards.scss */
+
+.egypte .cards .owned {
+	background-color: #8f4a23;
+}
+
+/* line 116, src/sass/06-layout/_cards.scss */
+
+.galapagos .cards .owned {
+	background-color: #ffac00;
+}
+
+/* line 123, src/sass/06-layout/_cards.scss */
+
+.onderwaterwereld .cards .owned {
+	background-color: #03c4fd;
+}
+
+/* line 130, src/sass/06-layout/_cards.scss */
+
+.peru .cards .owned {
+	background-color: #ff367a;
+}
+
+/* line 137, src/sass/06-layout/_cards.scss */
+
+.rockymountains .cards .owned {
+	background-color: #ff3500;
+}
+
+/* line 144, src/sass/06-layout/_cards.scss */
+
+.india .cards .owned {
+	background-color: #b5a9cf;
+}
+
+/* line 151, src/sass/06-layout/_cards.scss */
+
+.varen .cards .owned {
+	background-color: #51c2be;
+}
+
+/* line 158, src/sass/06-layout/_cards.scss */
+
+.nederland .cards .owned {
+	background-color: #c88638;
+}
+
+/* line 165, src/sass/06-layout/_cards.scss */
+
+.survival .cards .owned {
+	background-color: #f2b385;
+}
+
+/* line 173, src/sass/06-layout/_cards.scss */
+
+.wereldkaart .cards .owned {
+	background-color: #f7656f;
+}
+
+/*# sourceMappingURL=../../../../../../../../src/sass */
 
 @media screen and (min-width: 767px) {
 
@@ -379,6 +588,77 @@ header {
 
 h1 {
 	font-size: 48px;
+}
+
+/* line 8, src/sass/06-layout/_cards.scss */
+
+.cards li {
+	width: 200px;
+	height: 300px;
+}
+
+/* line 56, src/sass/06-layout/_cards.scss */
+
+.card-type {
+	font-size: 24px;
+}
+
+}
+
+@-webkit-keyframes wiggle {
+
+0% {
+	-webkit-transform: rotate(0);
+	transform: rotate(0);
+}
+
+25% {
+	-webkit-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+}
+
+50% {
+	-webkit-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+
+75% {
+	-webkit-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+}
+
+100% {
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+}
+
+@keyframes wiggle {
+
+0% {
+	-webkit-transform: rotate(0);
+	transform: rotate(0);
+}
+
+25% {
+	-webkit-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+}
+
+50% {
+	-webkit-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+
+75% {
+	-webkit-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+}
+
+100% {
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
 }
 
 }
