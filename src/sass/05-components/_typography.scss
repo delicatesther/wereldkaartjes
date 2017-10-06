@@ -7,6 +7,7 @@ h1 {
   font-size: 24px;
   font-family: $base-font--2;
   margin-bottom: 15px;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
   @include breakpoint(m) {
     font-size: 48px;
 
@@ -18,6 +19,7 @@ h2 {
   text-transform: uppercase;
   font-family: $base-font--2;
   margin-bottom: 5px;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 .counter {

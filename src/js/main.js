@@ -25,7 +25,7 @@ var vliegen = [
 
 var china = [
   {"type": "Chinese Muur", "owned": true},
-  {"type": "Rode Strand", "owned": false},
+  {"type": "Rode Strand", "owned": true},
   {"type": "Pareltoren van het Oosten", "owned": true},
   {"type": "Cinnaber", "owned": false},
   {"type": "Regenboogbergen", "owned": true},
@@ -77,14 +77,14 @@ var egypte = [
   {"type": "Trilobiet", "owned": true},
   {"type": "Oase", "owned": true},
   {"type": "Wierook", "owned": true},
-  {"type": "Papyrus", "owned": false},
+  {"type": "Papyrus", "owned": true},
   {"type": "Scarabee", "owned": false},
   {"type": "Zandstorm", "owned": true},
   {"type": "Vijfstreep schorpioen", "owned": false},
   {"type": "Peridoot", "owned": true},
 ];
 var galapagos = [
-  {"type": "Vleermuisvis", "owned": false},
+  {"type": "Vleermuisvis", "owned": true},
   {"type": "Blauwvoetgent", "owned": true},
   {"type": "Reuzenvijgcactus", "owned": true},
   {"type": "Galapagos-reuzenschildpad", "owned": false},
@@ -204,8 +204,6 @@ $(document).ready(function(){
 
     for (var i = 0; i < arr.length; i++) {
       var cardType = Object.values(arr[i])[0];
-      var cardNumber = arr.indexOf(arr[i]) + 1;
-
 
       if(arr[i].owned == true) {
         el.append('<li class="owned"><span class="card-type">' + cardType + '</span</li>');
@@ -234,16 +232,18 @@ $(document).ready(function(){
 
   $('#counter').html(pad($('.owned').length, 6));
 
-  addNumbers = function() {
-    var i = 1;
-    while(i <= 160) {
-      $('li').each(function() {
-        $(this).append('<span>' + i + '</span>');
-      })
-    }i++
-  };
+  $('a[href^="#"]').click(function() {
+    var target = $(this.hash);
+    if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
+    if (target.length == 0) target = $('html');
+    $('html, body').animate({ scrollTop: target.offset().top-50 }, 1000);
+    return false;
+  });
+});
 
-  addNumbers();
+$('.to-top').click(function(){
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
 
 
 });

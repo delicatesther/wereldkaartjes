@@ -22,9 +22,10 @@ var vliegen = [
   {"type": "Zwaveldamp", "owned": true},
   {"type": "Atol", "owned": false},
 ];
+
 var china = [
   {"type": "Chinese Muur", "owned": true},
-  {"type": "Rode Strand", "owned": false},
+  {"type": "Rode Strand", "owned": true},
   {"type": "Pareltoren van het Oosten", "owned": true},
   {"type": "Cinnaber", "owned": false},
   {"type": "Regenboogbergen", "owned": true},
@@ -76,14 +77,14 @@ var egypte = [
   {"type": "Trilobiet", "owned": true},
   {"type": "Oase", "owned": true},
   {"type": "Wierook", "owned": true},
-  {"type": "Papyrus", "owned": false},
+  {"type": "Papyrus", "owned": true},
   {"type": "Scarabee", "owned": false},
   {"type": "Zandstorm", "owned": true},
   {"type": "Vijfstreep schorpioen", "owned": false},
   {"type": "Peridoot", "owned": true},
 ];
 var galapagos = [
-  {"type": "Vleermuisvis", "owned": false},
+  {"type": "Vleermuisvis", "owned": true},
   {"type": "Blauwvoetgent", "owned": true},
   {"type": "Reuzenvijgcactus", "owned": true},
   {"type": "Galapagos-reuzenschildpad", "owned": false},
@@ -191,7 +192,6 @@ var wereldkaart = [
   {"type": "Wave rock", "owned": false},
 ];
 
-var allCards = [inpakken, vliegen, china, zuidpool, madagaskar, trein, egypte, galapagos, onderwaterwereld, peru, rockymountains, india, varen, nederland, survival, wereldkaart];
 
 $(document).ready(function(){
   pad = function(num, size) {
@@ -201,8 +201,10 @@ $(document).ready(function(){
   }
 
   fillList = function(arr, el) {
+
     for (var i = 0; i < arr.length; i++) {
       var cardType = Object.values(arr[i])[0];
+
       if(arr[i].owned == true) {
         el.append('<li class="owned"><span class="card-type">' + cardType + '</span</li>');
       } else {
@@ -230,29 +232,18 @@ $(document).ready(function(){
 
   $('#counter').html(pad($('.owned').length, 6));
 
-  // var totalListitems = $('body').children('li').length;
-  // var listItem = $('li');
-  //
-  // addNumbers = function() {
-  //   var i = 1;
-  //   while(i <= totalListitems) {
-  //     listItem.append(totalListitems);
-  //     i++
-  //   }
-  // };
-  //
-  // addNumbers();
-
   $('a[href^="#"]').click(function() {
-        var target = $(this.hash);
-        if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
-        if (target.length == 0) target = $('html');
-        $('html, body').animate({ scrollTop: target.offset().top-50 }, 1000);
-        return false;
-    });
+    var target = $(this.hash);
+    if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
+    if (target.length == 0) target = $('html');
+    $('html, body').animate({ scrollTop: target.offset().top-50 }, 1000);
+    return false;
+  });
 });
 
 $('.to-top').click(function(){
   $("html, body").animate({ scrollTop: 0 }, "slow");
- return false;
+  return false;
+
+
 });

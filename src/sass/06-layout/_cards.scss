@@ -1,8 +1,9 @@
 .card-type {
 	font-family: "Pangolin", cursive;
-	font-size: 15px;
+	font-size: 12px;
+	hyphens: auto;
   @include breakpoint(m) {
-    font-size: 24px;
+    font-size: 23px;
   }
 }
 .cards {
@@ -22,9 +23,6 @@
     position: relative;
     width: 120px;
     height: 180px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
     &:before {
       content: '';
       width: 100%;
@@ -36,8 +34,8 @@
       background:$white;
     }
     @include breakpoint(m) {
-    width: 200px;
-    height: 300px;
+    	width: 200px;
+    	height: 300px;
     }
   }
   .owned {
@@ -50,14 +48,16 @@
     &:after {
       content: 'Heb ik!';
       color: #000000;
-      font-size: 24px;
       font-family: "Pangolin", cursive;
       display: block;
       position: absolute;
       top: 50%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%) rotate(-30deg);
       transform: translate(-50%, -50%) rotate(-30deg);
+			font-size: 15px;
+			@include breakpoint(m) {
+				font-size: 24px;
+			}
     }
     .inpakken & {
       background-color: $pink--dark;
@@ -71,6 +71,10 @@
     .zuidpool & {
       background-color: $white;
       color: $green--aqua;
+			&:before {
+				border-top: 2px solid rgba($green--aqua, 0.3);
+				border-bottom: 2px solid rgba($green--aqua, 0.3);
+			}
     }
     .madagaskar & {
       background-color: $aqua--dark;

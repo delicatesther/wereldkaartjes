@@ -4,7 +4,16 @@
   right: 5%;
   top: 0;
   cursor: pointer;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
   span {
-    font-family: $base-font--1;
+    &:first-of-type {
+      opacity: 0;
+      @include breakpoint(m) {
+        opacity: 1;
+      }
+    }
+    &:nth-of-type(2) {
+      font-family: $base-font--1;
+    }
   }
 }
