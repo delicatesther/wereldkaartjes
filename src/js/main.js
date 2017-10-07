@@ -14,7 +14,7 @@ var vliegen = [
   {"type": "Het Natronmeer", "owned": true},
   {"type": "Rijstvelden", "owned": true},
   {"type": "Malé", "owned": true},
-  {"type": "Palau", "owned": false},
+  {"type": "Palau", "owned": true},
   {"type": "Het Hilliermeer", "owned": true},
   {"type": "Het Hartrif", "owned": true},
   {"type": "Rivierdelta's", "owned": false},
@@ -39,9 +39,9 @@ var zuidpool = [
   {"type": "IJsschotsen", "owned": true},
   {"type": "Zuidpoolstation", "owned": true},
   {"type": "Antarctische vetmuur", "owned": true},
-  {"type": "Antarctische krill", "owned": false},
+  {"type": "Antarctische krill", "owned": true},
   {"type": "Zee-engel", "owned": true},
-  {"type": "Giftige spons", "owned": false},
+  {"type": "Giftige spons", "owned": true},
   {"type": "Cryolophosaurus", "owned": false},
   {"type": "Meteoriet", "owned": false},
   {"type": "Bloedwaterval", "owned": true},
@@ -52,20 +52,20 @@ var madagaskar = [
   {"type": "Kleinste kameleon", "owned": false},
   {"type": "Komeetstaartvlinder", "owned": false},
   {"type": "Madagaskar-daggekkopoot", "owned": false},
-  {"type": "Olifantsvogel", "owned": false},
-  {"type": "Rode brandduizendpoot", "owned": false},
+  {"type": "Olifantsvogel", "owned": true},
+  {"type": "Rode brandduizendpoot", "owned": true},
   {"type": "Robijn", "owned": true},
   {"type": "Tsingy de Bemaraha", "owned": true},
   {"type": "Darwins wielwebspin", "owned": false},
-  {"type": "Reizigersboom", "owned": false},
+  {"type": "Reizigersboom", "owned": true},
 ];
 var trein = [
-  {"type": "Basilius-kathedraal", "owned": false},
-  {"type": "Faberge-ei", "owned": false},
+  {"type": "Basilius-kathedraal", "owned": true},
+  {"type": "Faberge-ei", "owned": true},
   {"type": "Saiga", "owned": true},
   {"type": "Joert", "owned": false},
   {"type": "Vliegenzwam", "owned": true},
-  {"type": "Taiga", "owned": false},
+  {"type": "Taiga", "owned": true},
   {"type": "Baikalmeer", "owned": true},
   {"type": "Denisovamens", "owned": false},
   {"type": "Diamantmijn", "owned": true},
@@ -73,7 +73,7 @@ var trein = [
 ];
 var egypte = [
   {"type": "Toetanchamon", "owned": true},
-  {"type": "Sfinx van Gizeh", "owned": false},
+  {"type": "Sfinx van Gizeh", "owned": true},
   {"type": "Trilobiet", "owned": true},
   {"type": "Oase", "owned": true},
   {"type": "Wierook", "owned": true},
@@ -90,17 +90,17 @@ var galapagos = [
   {"type": "Galapagos-reuzenschildpad", "owned": false},
   {"type": "Manzanilla-appel", "owned": true},
   {"type": "Torenhoge lavarots", "owned": false},
-  {"type": "Darwinvinken", "owned": false},
+  {"type": "Darwinvinken", "owned": true},
   {"type": "Zeeleguaan", "owned": false},
-  {"type": "Palo Santoboom schorpioen", "owned": false},
+  {"type": "Palo Santoboom", "owned": true},
   {"type": "Lavacactus", "owned": true},
 ];
 var onderwaterwereld = [
-  {"type": "Kerstboomworm", "owned": false},
+  {"type": "Kerstboomworm", "owned": true},
   {"type": "Grootste onderwaterschat", "owned": true},
   {"type": "Kwallenmeer", "owned": true},
   {"type": "Cenote", "owned": false},
-  {"type": "Steenvis", "owned": false},
+  {"type": "Steenvis", "owned": true},
   {"type": "Blauwe onderwatergrot", "owned": false},
   {"type": "Zebrahaai", "owned": false},
   {"type": "Blauwe draak", "owned": true},
@@ -112,7 +112,7 @@ var peru = [
   {"type": "Rode rotshaan", "owned": false},
   {"type": "Hoogland-indianen", "owned": true},
   {"type": "Grootste Bromella", "owned": true},
-  {"type": "Pyriet", "owned": false},
+  {"type": "Pyriet", "owned": true},
   {"type": "Cochenilleluis", "owned": false},
   {"type": "Zoutbaden van Maras", "owned": true},
   {"type": "Realgaar", "owned": true},
@@ -120,7 +120,7 @@ var peru = [
   {"type": "Nazcalijnen", "owned": false},
 ];
 var rockymountains = [
-  {"type": "Old Faithful-geiser", "owned": false},
+  {"type": "Old Faithful-geiser", "owned": true},
   {"type": "Bergketen", "owned": false},
   {"type": "Grote prismabron", "owned": true},
   {"type": "Mammoetboom", "owned": true},
@@ -139,7 +139,7 @@ var india = [
   {"type": "Bollywood", "owned": false},
   {"type": "Koningscobra", "owned": false},
   {"type": "Talenknobbel", "owned": false},
-  {"type": "Ganges", "owned": false},
+  {"type": "Ganges", "owned": true},
   {"type": "Blauwe Stad", "owned": false},
   {"type": "Holi", "owned": true},
 ];
@@ -170,11 +170,11 @@ var nederland = [
 var survival = [
   {"type": "Kamp opzetten", "owned": true},
   {"type": "Drinkwater", "owned": true},
-  {"type": "Rantsoen", "owned": false},
+  {"type": "Rantsoen", "owned": true},
   {"type": "Insecten eten", "owned": true},
   {"type": "Zon-bescherming", "owned": true},
   {"type": "Lokake bevolking", "owned": true},
-  {"type": "Camouflage", "owned": false},
+  {"type": "Camouflage", "owned": true},
   {"type": "Giftige soorten herkennen", "owned": true},
   {"type": "Bloedzuiger", "owned": true},
   {"type": "Vlot", "owned": false},
@@ -244,6 +244,5 @@ $(document).ready(function(){
 $('.to-top').click(function(){
   $("html, body").animate({ scrollTop: 0 }, "slow");
   return false;
-
 
 });
