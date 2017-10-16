@@ -5,8 +5,8 @@ var inpakken = [
   {"type": "Deet antimuggenmiddel", "owned": true},
   {"type": "Hoofdlamp", "owned": true},
   {"type": "EHBO-setje", "owned": true},
-  {"type": "Waterdichte zak", "owned": false},
-  {"type": "Kompas", "owned": false},
+  {"type": "Waterdichte zak", "owned": true},
+  {"type": "Kompas", "owned": true},
   {"type": "Satteliet-telefoon", "owned": true},
   {"type": "Speurplaatje", "owned": true},
 ];
@@ -56,7 +56,7 @@ var madagaskar = [
   {"type": "Rode brandduizendpoot", "owned": true},
   {"type": "Robijn", "owned": true},
   {"type": "Tsingy de Bemaraha", "owned": true},
-  {"type": "Darwins wielwebspin", "owned": false},
+  {"type": "Darwins wielwebspin", "owned": true},
   {"type": "Reizigersboom", "owned": true},
 ];
 var trein = [
@@ -87,9 +87,9 @@ var galapagos = [
   {"type": "Vleermuisvis", "owned": true},
   {"type": "Blauwvoetgent", "owned": true},
   {"type": "Reuzenvijgcactus", "owned": true},
-  {"type": "Galapagos-reuzenschildpad", "owned": false},
+  {"type": "Galapagos-reuzenschildpad", "owned": true},
   {"type": "Manzanilla-appel", "owned": true},
-  {"type": "Torenhoge lavarots", "owned": false},
+  {"type": "Torenhoge lavarots", "owned": true},
   {"type": "Darwinvinken", "owned": true},
   {"type": "Zeeleguaan", "owned": true},
   {"type": "Palo Santoboom", "owned": true},
@@ -121,7 +121,7 @@ var peru = [
 ];
 var rockymountains = [
   {"type": "Old Faithful-geiser", "owned": true},
-  {"type": "Bergketen", "owned": false},
+  {"type": "Bergketen", "owned": true},
   {"type": "Grote prismabron", "owned": true},
   {"type": "Mammoetboom", "owned": true},
   {"type": "Bosbrand", "owned": true},
@@ -129,7 +129,7 @@ var rockymountains = [
   {"type": "Ratelslang", "owned": true},
   {"type": "Goudklomp", "owned": true},
   {"type": "Rocky-mountain-sprinkhaan", "owned": true},
-  {"type": "Bizon", "owned": false},
+  {"type": "Bizon", "owned": true},
 ];
 var india = [
   {"type": "Taj Mahal", "owned": true},
@@ -145,7 +145,7 @@ var india = [
 ];
 var varen = [
   {"type": "Windpark Gemini", "owned": true},
-  {"type": "Astronavigatie", "owned": false},
+  {"type": "Astronavigatie", "owned": true},
   {"type": "Bultrug", "owned": true},
   {"type": "Vissen met Aalscholvers", "owned": true},
   {"type": "Portugees oorlogsschip", "owned": true},
