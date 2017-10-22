@@ -19,7 +19,7 @@ var vliegen = [
   {"type": "Het Hartrif", "owned": true},
   {"type": "Rivierdelta's", "owned": true},
   {"type": "Cirkelirrigatie", "owned": true},
-  {"type": "Zwaveldamp", "owned": false},
+  {"type": "Zwaveldamp", "owned": true},
   {"type": "Atol", "owned": true},
 ];
 
@@ -51,7 +51,7 @@ var madagaskar = [
   {"type": "Baobab", "owned": true},
   {"type": "Kleinste kameleon", "owned": true},
   {"type": "Komeetstaartvlinder", "owned": true},
-  {"type": "Madagaskar-daggekkopoot", "owned": false},
+  {"type": "Madagaskar-daggekkopoot", "owned": true},
   {"type": "Olifantsvogel", "owned": true},
   {"type": "Rode brandduizendpoot", "owned": true},
   {"type": "Robijn", "owned": true},
@@ -109,7 +109,7 @@ var onderwaterwereld = [
 ];
 var peru = [
   {"type": "Vinicunca", "owned": true},
-  {"type": "Rode rotshaan", "owned": false},
+  {"type": "Rode rotshaan", "owned": true},
   {"type": "Hoogland-indianen", "owned": true},
   {"type": "Grootste Bromella", "owned": true},
   {"type": "Pyriet", "owned": true},
@@ -125,7 +125,7 @@ var rockymountains = [
   {"type": "Grote prismabron", "owned": true},
   {"type": "Mammoetboom", "owned": true},
   {"type": "Bosbrand", "owned": true},
-  {"type": "Tijgersalamander", "owned": false},
+  {"type": "Tijgersalamander", "owned": true},
   {"type": "Ratelslang", "owned": true},
   {"type": "Goudklomp", "owned": true},
   {"type": "Rocky-mountain-sprinkhaan", "owned": true},
